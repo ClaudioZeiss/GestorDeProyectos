@@ -1,0 +1,42 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand"><h2>Listado de Proyectos</h2></a>
+    <form class="d-flex">
+      <!--
+        <input class="form-control me-2" type="search" placeholder="Todos" aria-label="Search" name="search">
+      -->
+      <select name="search">
+        <option value="todos" selected >Todos</option>
+        <option value="propuesta" >propuesta</option>
+        <option value="en progreso" >en progreso</option>
+        <option value="terminado">terminado</option>
+      </select>  
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
+<table class="table">
+    <tr>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>FechaInicio</th>
+        <th>FechaFin</th>
+        <th>Estado</th>
+    </tr>  
+    <% @proyect.each do |proyect| %>
+        <tr>
+            <td><%= proyect.name %> </td>
+            <td><%= proyect.description %> </td>
+            <td><%= proyect.timestart %> </td>
+            <td><%= proyect.timeend %> </td>
+            <td><%= proyect.state %> </td>
+        </tr>
+    <% end %>
+</table>
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+<h1> Formulario Ingreso de Proyecto </h1>
+<br>
+<br>
+<form method="get" action="/pages/crear">
+    <div class="form-group">
+        <label for="name">Nombre : </label>
+        <input name="name" cols="80">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="description">Descripcion :</label>
+        <br>
+        <textarea name="description" rows="7" cols="50"> </textarea>
+    </div>
+    <br>    
+    <div class="form-group">
+        <p>
+        <label for="start">Fecha de Inicio :</label>
+        <input type="date" id="timeIni" name="timeIni" value="2022-04-19" min="2022-01-01" max="2099-12-31">
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;                    
+        <label for="end">Fecha de Fin :</label>
+        <input type="date" id="timeEnd" name="timeEnd" value="2022-04-19" min="2022-01-01" max="2099-12-31">
+        </p>
+    </div>    
+    <br>
+    <div class="form-group">
+        <label for="start">Estado :</label>
+        <select name="state">
+            <option value="propuesta" selected >propuesta</option>
+            <option value="en progreso" >en progreso</option>
+            <option value="terminado">terminado</option>
+        </select>        
+    </div>    
+    <br>
+    <button type="submit" value="grabar" class="btn btn-outline-success">GRABAR</button>
+    <input type="reset" class="btn btn-outline-success" value="BORRAR" />
+</form>
