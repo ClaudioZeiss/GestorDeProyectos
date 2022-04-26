@@ -1,4 +1,5 @@
 --> Debo tener a mi disposición un formulario para crear proyectos. (2 Puntos)
+
         index.html.erb
 
 --> El proyecto debe tener un nombre, una descripción, una fecha de comienzo, una de término y un estado. (1 Punto)
@@ -64,9 +65,10 @@ Este estado por defecto debe ser propuesta. (1 Punto)
 
 --> El proyecto debe ser subido a heroku y se debe ingresar el link para la evaluación. (1 Punto)
 
-
+        https://herokugestorproyectos.herokuapp.com/
 
 --> Repositorio en GitHub
+
         https://github.com/ClaudioZeiss/GestorDeProyectos
 
 
